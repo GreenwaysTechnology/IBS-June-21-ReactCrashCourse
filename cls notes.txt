@@ -1,0 +1,338 @@
+
+React is YET ANOTHER DOM WRAPPER 
+
+
+CGI - HTML pages dynamically. - c /c++
+
+J2EE
+
+ASP
+
+PHP
+
+NETS CAP
+
+CREATED LANGUAGE JS - TO CHANGE RENDERED HTML ON BROWSER --- DOM PROGRAMMING
+
+OBJECT ORIENTED HTML 
+
+INSIDE BROWSER,INSIDE JS ENGINE EVERY HTML ELEMENT IS OBJECT.
+
+DOM PROGRAMMING------2000. - DOJO -2005 -JQUERY.
+
+2005 - Mobility
+
+2007 -w3c -  SPA - html 5,css3,new js api - PWAS, RWD.
+
+angular js - mvc spa framework
+
+FLUX - Design pattern - implementation - flux.js
+
+flux.js
+
+  -ui - React
+  - models / biz logic.
+
+Objective of FLUX - REACT.
+
+-DATA MUTATION TRACKING -  TIME TRAVEL
+
+REACT VERSIONS
+
+REACT 0.1 -  ES 5
+
+REACT 16 + - 17 -ES 6
+
+REACT IS LIB - FOCUS ONLY ON UI LAYER.
+///////////////////////////////////////////////////////////////////////////////////////////
+
+REACT :
+
+ - REPRESENT DOM ELEMENTS INSIDE REACT AS "VIRTUAL DOM".
+REACT WAS CREATED ONLY FOR BROWSERS.
+
+REACT FOR OTHER UI DEVELOPMENT
+
+-REACT BROWSER -  React-dom
+
+-REACT MOBILE   -REACT NATIVE
+
+-REACT VR
+
+-REACT IOT
+
+-REACT TV
+
+ETC.........
+////////////////////////////////////////////////////////////////////////////////////////////
+
+TYPES OF PROGRAMMING
+
+-IMPERATIVE -
+-DECLARATIVE - DEPOSIT 100 RS AT ACCOUNT NO 9999
+
+REACT PROGRAMMING MODEL:
+
+
+-Declaratives
+
+  JSX - PL FROM REACT FOR WRITING DECLARATIVE DOM PROGRAMMING.
+
+ COMPONENTS - OBJECT - DATA + UI + HOW TO CHANGE DATA.
+
+ OBJECTS ARE STRECTED IN HIERACHIAL ORDER -  TREE MODEL - OBJECT TREE /COMPONENT TREE.
+
+ AS OPP TO MVC, REACT PROPOSED MODEL SINGLE DIRECTINAL DATA FLOW MODEL. WHERE COMPONENT(UI)
+ ITSELF CANT CHANGE DATA.  
+
+ REACT USES FP PRINCIPLES 100% -  PURE FUNCTIONS.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+WHY REACT /WHAT APPS REACT IS VERY USEFULL?
+
+- WHERE DATA IS CHANGING VERY FAST AND WHERE WE NEED UI UPDATES VERY FAST WITHOUT UI FLICKERING.
+////////////////////////////////////////////////////////////////////////////////////////////
+
+dom element creation: component creations
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+barrel export
+
+How to style your app.
+
+css :
+
+ <div class="container">
+
+ <h1 style ="color:red;">
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Data binding ;
+
+ -props pattern -  property pattern
+ -state pattern 
+
+Component consitute
+
+- UI - HTML ELEMENTS -H1,DIV,IMG
+- DATA 
+
+ <h1 id="myheading" class="mystyle">
+
+ h1 - Object
+
+ id,class - attributes
+
+ class H1 {
+
+    id,
+    class
+}
+
+ <Customer id="100" name="subu" city="coimbatore">
+ 
+ id,name,city - property
+
+How props pattern works?
+
+according to flux design pattern, 
+
+   -cmp should receive data and just show the data.  -  input and output
+
+ function  customer(props){ 
+
+     return <p>{props.id}</p>
+ }
+
+ customer({id:1,name:'a'})
+
+ look at this fun never and ever change data.
+
+
+flux pattern works based on functional programming.
+
+-pure function
+
+1.pure function
+ 
+A.function which receives input, return the same =>function never modify the input
+
+ function  display(input){
+         return input
+  }
+ input===>input(as out put)
+
+ impure function;
+ function  display(input){
+         return input *11 //side effect
+  }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+var i =10
+
+i="hello"
+
+property validation:
+ -to validate property datatype,required,rules
+
+How to pass array and bind?
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+what can be props?
+
+data -  numbers,strings,boolean,objects,arrays
+
+function - can be passed as prop
+
+component/any element can be prop
+
+Place holder component:
+
+ Banner
+ Tab
+ caracule
+ etc....
+
+<Banner />
+
+
+<Banner>
+    ? - here we can add any thing -  prop
+</Banner>
+
+<div>
+   <img>
+</div>
+
+/////////////////////////
+
+conditional rendering: based on some condition i want to render compoent
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+state: component want to change data?
+
+how to change state ? event handling
+
+state and event handling can be done only in class components.
+
+2.Pure function 2 nd principle
+
+
+data:
+
+types of data
+
+1.biz data - models /domain objects/enties
+2.ui data -  to control ui like show/hide , enable and disable .. 
+
+any type of data must be encapsulate inside literal object pointed by variable state.
+
+react follows pure function pattern:
+
+1.pure function
+ 
+B.function which receives input, can modify it but it should not modify the orginal object
+   - it should not mutate rather it should return immutable object.
+
+hooks:
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Component Design approach
+
+1.Container cmp
+2.Presentational cmp
+
+component =  state + biz logic + ui
+
+ state + biz logic =>container
+
+ Ui => Presentational
+
+dynamic props ; state of cmp is sent as prop to another cmp.
+
+function as prop
+//////////////////////////////////////////////////////////////////////////////////////////
+
+Async programming:
+
+ajax calls
+websockets
+
+
+Life cycle apis
+
+-mount c-render-compdidmount
+-update -setState--render-compontdidupate
+-unmount-componentWillUnMount
+
+componentDid
+  -ajax,socket,timers
+
+
+useEffect = > didMount,didUpdate,willUnMount
+
+
+ajax calls -  fetch,axios
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+State Management:
+
+redux
+
+redux stores the entire app state(data).
+
+App:
+  collection of features
+
+-customers - customer state
+-orders - order state
+-inventory -inventory state
+-payments -payment state
+
+redux maintains a database called "store"
+
+store keeps all data in single object
+
+const appState = { 
+ customers: {} ...
+ orders:{}...
+}
+
+appState.customers = >customer data
+
+
+Store is central thing in redux work flow.
+
+
+react router
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
